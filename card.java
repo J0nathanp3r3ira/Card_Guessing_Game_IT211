@@ -11,7 +11,6 @@ public class card {
 		CLUBS    ("Clubs",   "c"),
 		DIAMONDS ("Diamonds","d"),
 		HEARTS   ("Hearts",  "h");
-
 		private final String suit;
 		private final String imgAbbr;
 
@@ -21,11 +20,11 @@ public class card {
 			this.imgAbbr = imgAbbr;
 		}
 
-		//Returns suit of Card object
+		//Returns type of card
 		public String getSuit(){
 			return this.suit;
 		}
-		//Return image abbreviation letter
+		//Returns assigned letter of card
 		public String getImgAbbr(){
 			return this.imgAbbr;
 		}
@@ -50,7 +49,7 @@ public class card {
 		private final int value;
 		private final String imgAbbr;
 
-		//constructor of rank
+		  //method constucts rank
 		Rank(String rank, int value, String imgAbbr){
 			this.rank = rank;
 			this.value = value;
@@ -62,18 +61,18 @@ public class card {
 			return this.value;
 		}
 		
-		//Returns String rank of card object
+		//Returns the string rank of a card
 		public String getRank(){
 			return this.rank;
 		}
 
-		//Returns image abbreviation letter
+		//Returns image abreviation 
 		public String getImgAbbr(){
 			return this.imgAbbr;
 		}
 	}
 
-	//card constructor
+	//method that constructs cards
 	public card(String rank, String suit, int value, BufferedImage cardImage) {
 		this.suit = suit;
 		this.rank = rank;
@@ -81,8 +80,8 @@ public class card {
 		this.cardImage = cardImage;
 	}
 
-	//Returns string values from 
-	public String toString(){
+	      //Returns appropriate string value
+	          public String toString(){
 		return rank + " of " + suit;
 	}
 
